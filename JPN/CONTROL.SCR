@@ -1,0 +1,111 @@
+/* ******************************************************************** */
+/* MULTIMEDIA INSTALL SCRIPT (MINSTALL.EXE)                             */ 
+/* ******************************************************************** */
+package="MMMPA"
+codepage=437
+filelist="..\\RES\\MMIOPROC.LST"            /* File name with parts list */
+groupcount=4                                                  /* groups */
+munitcount=1                                         /* number of disks */
+medianame="MPEG Audio-1 Layer 1/2/3 Multimedia I/O (Read/Write) Service"
+
+/* ******************************************************************** */
+/* DEST DIRECTORY                                                       */ 
+/* ******************************************************************** */
+destindir="\\MMOS2\\"            = 0
+destindir="\\MMOS2\\DLL\\"       = 2
+destindir="\\MMOS2\\MOVIES\\"    = 3
+destindir="\\MMOS2\\INSTALL\\"   = 4
+destindir="\\MMOS2\\DSP\\"       = 5
+destindir="\\MMOS2\\MACROS\\"    = 6
+destindir="\\MMOS2\\HELP\\"      = 7
+destindir="\\MMOS2\\LIB\\"       = 8
+destindir="\\MMOS2\\SOUNDS\\"    = 9
+destindir="\\MMOS2\\SOUNDS\\Tracks\\"    = 10
+destindir="\\MMOS2\\INSTALL\\LMEDIAEX\\" = 11
+destindir="\\MMOS2\\SOUNDS\\Tracks\\Controls" = 15
+destindir="\\MMOS2\\SOUNDS\\Tracks\\Effects"  = 16
+destindir="\\MMOS2\\SOUNDS\\Tracks\\Samples"  = 17
+destindir="\\OS2\\INSTALL\\"     = 18
+
+/* ******************************************************************** */
+/* SRC  DIRECTORY                                                       */ 
+/* ******************************************************************** */
+sourcedir="\\"                   = 0
+sourcedir="\\"                   = 1
+sourcedir="\\..\\RES\\"          = 2
+sourcedir="\\..\\RES\\"          = 3
+sourcedir="\\..\\"               = 4
+sourcedir="\\..\\RES\\"          = 5
+sourcedir="\\..\\RES\\TRACKS\\"  = 6
+sourcedir="\\..\\RES\\"          = 7
+
+/* ******************************************************************** */
+/* TM2LABO COMMON (WPS SETTING)                                         */ 
+/* ******************************************************************** */
+ssgroup=0
+ssname="COMMON INSTALL"
+sssize=17
+ssversion="1.0.0"
+ssselect="ALWAYS"
+ssinich="COMMON.SCR"
+sscoreqs=0
+
+/* ******************************************************************** */
+/* THIS PACKAGE COMMON                                                  */ 
+/* ******************************************************************** */
+ssgroup=1
+ssname="ALWAYS INSTALL"
+sssize=17
+ssversion="1.0.0"
+ssselect="ALWAYS"
+ssinich="DEFAULT.SCR"
+sscoreqs=0
+
+/* ******************************************************************** */
+/* SELECT THE PACKAGE                                                   */ 
+/* ******************************************************************** */
+ssgroup=20
+ssname="MPEGµ∞√ﬁ®µ1 ⁄≤‘∞1,2,3\nœŸ¡“√ﬁ®±ägí£ ﬂ∞¬"
+sssize=1
+ssicon="..\\RES\\PARTWAVE.ICO"
+ssversion="1.0.1"
+ssselect="VERSION"
+ssinich="..\\RES\\MPA.SCR"
+sscoreqs=0
+
+ssgroup=21
+ssname="MPEGµ∞√ﬁ®µ1 Åyägí£ïœä∑êÊÅz\nœŸ¡“√ﬁ®±ägí£ ﬂ∞¬"
+sssize=1
+ssicon="..\\RES\\PARTWAVE.ICO"
+ssversion="1.0.1"
+ssselect="NO"
+ssinich="..\\RES\\MPAPLUS.SCR"
+sscoreqs=0
+
+ssgroup=22
+ssname="MPEGµ∞√ﬁ®µ1ÅyRIFF WAVEå`éÆÅz\nœŸ¡“√ﬁ®±ägí£ ﬂ∞¬"
+sssize=1
+ssicon="..\\RES\\PARTWAVE.ICO"
+ssversion="1.0.1"
+ssselect="NO"
+ssinich="..\\RES\\MPAW.SCR"
+sscoreqs=0
+
+ssgroup=24
+ssname="MPEGµ∞√ﬁ®µê›íË\nœŸ¡“√ﬁ®±ê›íËÃﬂ€∏ﬁ◊—"
+sssize=38
+ssicon="..\\RES\\SETUP.ICO"
+ssversion="1.0.1"
+ssselect="VERSION"
+ssinich="..\\RES\\MPASETUP.SCR"
+sscoreqs=0
+
+ssgroup=25
+ssname="MPEGµ∞√ﬁ®µçHãÔî†\nÉIÉ}ÉPÉcÅ[Éã"
+sssize=40
+ssicon="..\\RES\\ERREXQ.ICO"
+ssversion="1.0.1"
+ssselect="VERSION"
+sscoreqs=0
+
+

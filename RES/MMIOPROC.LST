@@ -1,0 +1,23 @@
+14
+/*****************************************************************/
+/*                                                               */
+/* Disk#  Group#   Dest#   Source#     FileName                  */
+/*****************************************************************/
+
+/* Install Files */
+     0     0        2         2      "MPAPROC.DLL"
+     0     0        4         2      "UNMMIOSV.EXE"
+     0     0        4         2      "UNMPA.CMD"
+     0     20       4         2      "MPA.SCR"
+     0     21       4         2      "MPAPLUS.SCR"
+     0     22       4         2      "MPAW.SCR"
+     0     24       4         2      "MPASETUP.SCR"
+     0     24       2         2      "MPAPAGE.DLL"
+     0     24       4         2      "UNMPAPG.EXE"
+     0     25       0         2      "MP3DEC.EXE"
+     0     25       0         2      "MP3ENC.EXE"
+     0     0        7         0      "MMMPA.INF"
+     0     0        4         2      "MMMPA.BMP"
+     0     0        4         2      "MMMPA.LSK"
+
+

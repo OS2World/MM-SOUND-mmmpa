@@ -1,0 +1,190 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "DIALOG.h"
+
+DLGTEMPLATE ID_DIALOG2_JPN LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Product information", ID_DIALOG2_JPN, 28, 42, 208, 142, NOT 
+            FS_DLGBORDER | FS_BORDER | WS_VISIBLE
+    BEGIN
+        GROUPBOX        "製品情報", 208, 4, 54, 200, 86, NOT WS_GROUP
+        CTEXT           "MPEGオーディオ１ 圧縮／圧縮解除サービス", 201, 6, 
+                        106, 196, 12, DT_VCENTER
+        CTEXT           "マルチメディア・セットアップ・プログラム", 202, 6, 
+                        96, 196, 12, DT_VCENTER
+        CTEXT           "Copyrights (C) 1999-2000", 203, 6, 82, 196, 12, 
+                        DT_VCENTER
+        CTEXT           "マルチメディア東京研究室", 204, 6, 72, 196, 12, 
+                        DT_VCENTER
+        CTEXT           "All Rights Reserved", 205, 6, 62, 196, 12, 
+                        DT_VCENTER
+        LTEXT           "e-mail: os2warp@big.or.jp", 206, 6, 40, 196, 8
+        LTEXT           "URL: http://www7.big.or.jp/~os2warp/", 207, 6, 30, 
+                        196, 8
+        LTEXT           "TEAM MMOS/2 TOKYO", 209, 6, 12, 196, 8, DT_VCENTER
+        RTEXT           "Multimedia Communications !", 210, 6, 2, 196, 8, 
+                        DT_VCENTER
+        CTEXT           "ＭＭＭＰＡ", 701, 6, 118, 196, 12, DT_VCENTER
+    END
+END
+
+DLGTEMPLATE ID_DIALOG2 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Product information", ID_DIALOG2, 28, 42, 208, 142, NOT 
+            FS_DLGBORDER | FS_BORDER | WS_VISIBLE
+    BEGIN
+        GROUPBOX        "Product Information", 208, 4, 54, 200, 86, NOT 
+                        WS_GROUP
+        CTEXT           "MMMPA", 201, 6, 118, 196, 12, DT_VCENTER
+        CTEXT           "MPEG Audio Decode & Encode Service", 202, 6, 106, 
+                        196, 12, DT_VCENTER
+        CTEXT           "Multimedia Setup Program", 203, 6, 94, 196, 12, 
+                        DT_VCENTER
+        CTEXT           "Copyright (C) 1999-2000, Team MMOS/2 Tokyo", 204, 6, 
+                        74, 196, 12, DT_VCENTER
+        CTEXT           "All Rights Reserved", 205, 6, 62, 196, 12, 
+                        DT_VCENTER
+        LTEXT           "e-mail: os2warp@big.or.jp", 206, 6, 40, 196, 8
+        LTEXT           "URL: http://www7.big.or.jp/~os2warp/", 207, 6, 30, 
+                        196, 8
+        CTEXT           "TEAM MMOS/2 TOKYO", 209, 6, 12, 196, 8, DT_VCENTER
+        RTEXT           "Multimedia Communications !", 210, 6, 2, 196, 8, 
+                        DT_VCENTER
+    END
+END
+
+DLGTEMPLATE ID_DIALOG_JPN LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "MPEGオーディオ 圧縮／圧縮解除サービス", ID_DIALOG_JPN, 16, 44, 
+            312, 184, NOT FS_DLGBORDER | FS_BORDER | WS_VISIBLE | NOT 
+            WS_SAVEBITS
+    BEGIN
+        LTEXT           "名称", 111, 6, 174, 58, 8, NOT WS_GROUP
+        ENTRYFIELD      "MPEGオーディオ", ID_TEXT_TABNAME, 6, 162, 126, 8, 
+                        ES_CENTER | ES_MARGIN
+        PUSHBUTTON      "保存(~V)", ID_BUTTON_SAVE, 138, 154, 50, 16, 
+                        WS_GROUP
+        PUSHBUTTON      "省略時(~D)", ID_BUTTON_DEFAULT, 188, 154, 58, 16
+        PUSHBUTTON      "取り消し(~U)", ID_BUTTON_UNDO, 246, 154, 62, 16
+        PUSHBUTTON      "ヘルプ(~H)", ID_BUTTON_HELP, 4, 2, 54, 20
+        RTEXT           "ＭＭＭＰＡ - MPEGオーディオ 圧縮／圧縮解除サービス", 
+                        116, 68, 172, 237, 10
+        GROUPBOX        "共通設定", 403, 4, 118, 148, 36
+        LTEXT           "優先処理モード（システムへの負荷）", 404, 6, 136, 
+                        142, 8, NOT WS_GROUP
+        CONTROL         "", ID_LB_PRIORITY, 20, 96, 130, 37, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        GROUPBOX        "圧縮解除", 414, 156, 2, 152, 106
+        LTEXT           "動作の設定／高速化", 415, 160, 90, 100, 8, NOT 
+                        WS_GROUP
+        AUTOCHECKBOX    "ディスクキャッシュ", ID_CHK_DISKCACHE, 172, 78, 88, 
+                        10, WS_DISABLED
+        PUSHBUTTON      "拡張(~E)", ID_BTN_DISKCACHE, 260, 78, 44, 18, 
+                        WS_DISABLED
+        CONTROL         "", ID_LB_DISKCACHE, 184, 26, 122, 53, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE | 
+                        WS_DISABLED
+        CONTROL         "", ID_LB_EFFECT, 172, 2, 134, 65, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        AUTOCHECKBOX    "フレームスキップ", ID_CHK_FRAMESKIP, 172, 46, 130, 
+                        10
+        CONTROL         "", ID_LB_QUICK, 172, 2, 134, 45, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        AUTOCHECKBOX    "ｱﾝﾁｴﾘｱｽ処理を行う [推奨]", ID_CHK_ANTIALIAS, 172, 
+                        24, 134, 10
+        AUTOCHECKBOX    "左チャンネルのみ圧縮解除", ID_CHK_LCHONLY, 172, 14, 
+                        132, 10
+        AUTOCHECKBOX    "CRCチェックや再試行を行わない", ID_CHK_NOCHECK, 172, 
+                        4, 132, 10
+        GROUPBOX        "圧縮", 420, 156, 110, 152, 44
+        CONTROL         "", ID_LB_COMPPRIORITY, 226, 96, 80, 49, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        LTEXT           "圧縮度優先条項", 422, 160, 136, 62, 8, NOT WS_GROUP
+        AUTORADIOBUTTON "モデル１で圧縮を行う", ID_CHK_MODEL1, 172, 122, 132, 
+                        10, WS_TABSTOP
+        AUTORADIOBUTTON "モデル２で圧縮を行う [推奨]", ID_CHK_MODEL2, 172, 
+                        112, 132, 10, WS_TABSTOP
+        GROUPBOX        "圧縮パラメーター", 425, 4, 24, 148, 92
+        LTEXT           "圧縮ファイル生成時に設定する事項", 426, 8, 98, 140, 
+                        8, NOT WS_GROUP
+        AUTOCHECKBOX    "オリジナル (Original)", ID_CHK_ORIGINAL, 18, 86, 
+                        130, 10
+        AUTOCHECKBOX    "著作権 (Copyrighted)", ID_CHK_COPYRIGHTED, 18, 76, 
+                        130, 10
+        AUTOCHECKBOX    "エラー保護", ID_CHK_ERRORPROTECT, 18, 66, 130, 10
+        AUTOCHECKBOX    "強調 (Emphasis)", ID_CHK_EMPHASIS, 18, 56, 130, 10
+        AUTOCHECKBOX    "拡張 (Extension)", ID_CHK_EXTENSION, 18, 46, 130, 
+                        10
+        AUTOCHECKBOX    "アスキーコード(非バイナリー)", ID_CHK_ASCII, 18, 36, 
+                        130, 10
+        AUTOCHECKBOX    "モノラルで圧縮を行う", ID_CHK_MONORAL, 18, 26, 132, 
+                        10
+        LTEXT           "現在のCPU負荷率(参考)", 439, 60, 14, 92, 8
+        RTEXT           "0", ID_SS_CPUBUSY, 60, 2, 40, 10, DT_VCENTER | NOT 
+                        WS_GROUP
+        RTEXT           "パーセント", 441, 102, 2, 50, 10, DT_VCENTER | NOT 
+                        WS_GROUP
+    END
+END
+
+DLGTEMPLATE ID_DIALOG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "MPEGオーディオ 圧縮／圧縮解除サービス", ID_DIALOG, 16, 44, 312, 
+            184, NOT FS_DLGBORDER | FS_BORDER | WS_VISIBLE | NOT WS_SAVEBITS
+    BEGIN
+        LTEXT           "Name", 111, 6, 174, 63, 8, NOT WS_GROUP
+        ENTRYFIELD      "MPEG Audio", ID_TEXT_TABNAME, 6, 162, 126, 8, 
+                        ES_CENTER | ES_MARGIN
+        PUSHBUTTON      "Sa~ve", ID_BUTTON_SAVE, 138, 154, 50, 16, WS_GROUP
+        PUSHBUTTON      "~Default", ID_BUTTON_DEFAULT, 188, 154, 58, 16
+        PUSHBUTTON      "~Undo", ID_BUTTON_UNDO, 246, 154, 62, 16
+        PUSHBUTTON      "~Help", ID_BUTTON_HELP, 4, 2, 54, 20
+        RTEXT           "MMMPA - MPEG Audio Encode & Decode service", 116, 
+                        90, 172, 215, 10
+        GROUPBOX        "Common", 403, 4, 118, 148, 36
+        LTEXT           "Prioriy", 404, 6, 136, 142, 8, NOT WS_GROUP
+        CONTROL         "", ID_LB_PRIORITY, 20, 96, 130, 37, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        GROUPBOX        "De-Compression", 414, 156, 2, 152, 106
+        LTEXT           "Setup / Quick drive", 415, 160, 90, 100, 8, NOT 
+                        WS_GROUP
+        AUTOCHECKBOX    "Disk cache", ID_CHK_DISKCACHE, 172, 78, 88, 10
+        PUSHBUTTON      "~Extend", ID_BTN_DISKCACHE, 262, 80, 44, 18
+        CONTROL         "", ID_LB_DISKCACHE, 184, 26, 122, 53, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        CONTROL         "", ID_LB_EFFECT, 172, 0, 134, 65, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        AUTOCHECKBOX    "Frame skip", ID_CHK_FRAMESKIP, 172, 44, 130, 10
+        CONTROL         "", ID_LB_QUICK, 172, 2, 134, 43, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        AUTOCHECKBOX    "Antialias Order", ID_CHK_ANTIALIAS, 172, 24, 130, 
+                        10
+        AUTOCHECKBOX    "L Channel Only", ID_CHK_LCHONLY, 172, 14, 132, 10
+        AUTOCHECKBOX    "No CRC check & No retry", ID_CHK_NOCHECK, 172, 4, 
+                        132, 10
+        GROUPBOX        "Compression", 420, 156, 110, 152, 44
+        CONTROL         "", ID_LB_COMPPRIORITY, 226, 96, 80, 49, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        LTEXT           "Default mode", 422, 160, 136, 62, 8, NOT WS_GROUP
+        AUTORADIOBUTTON "Phy Model 1", ID_CHK_MODEL1, 172, 122, 132, 10, 
+                        WS_TABSTOP
+        AUTORADIOBUTTON "Phy Model 2", ID_CHK_MODEL2, 172, 112, 132, 10, 
+                        WS_TABSTOP
+        GROUPBOX        "Compression", 425, 4, 24, 148, 92
+        LTEXT           "Parameters", 426, 8, 98, 140, 8, NOT WS_GROUP
+        AUTOCHECKBOX    "Original", ID_CHK_ORIGINAL, 18, 86, 130, 10
+        AUTOCHECKBOX    "Copyrighted", ID_CHK_COPYRIGHTED, 18, 76, 130, 10
+        AUTOCHECKBOX    "Error protection", ID_CHK_ERRORPROTECT, 18, 66, 130, 
+                        10
+        AUTOCHECKBOX    "Emphasis", ID_CHK_EMPHASIS, 18, 56, 130, 10
+        AUTOCHECKBOX    "Extension", ID_CHK_EXTENSION, 18, 46, 130, 10
+        AUTOCHECKBOX    "ASCII Mode encord", ID_CHK_ASCII, 18, 36, 130, 10
+        AUTOCHECKBOX    "Monoral mode", ID_CHK_MONORAL, 18, 26, 132, 10
+        LTEXT           "CPU Busy rate", 439, 60, 14, 92, 8
+        RTEXT           "0", ID_SS_CPUBUSY, 60, 2, 40, 10, DT_VCENTER | NOT 
+                        WS_GROUP
+        RTEXT           "Persent", 441, 102, 2, 50, 10, DT_VCENTER | NOT 
+                        WS_GROUP
+    END
+END

@@ -1,0 +1,13 @@
+/* ******************************************************************** */
+/* MULTIMEDIA INSTALL SCRIPT (SUB SCRIPT)                               */ 
+/* ******************************************************************** */
+
+WPObject = (
+   WPClassName = "WPProgram"
+   WPTitle = "MPEGオーディオの説明書"
+   WPSetupString = "OBJECTID=<DOC_TM2LABO_MPA>;EXENAME=VIEW.EXE;PARAMETERS=$(DIR)7\\MMMPA.INF"
+   WPLocation = "<FLDR_TM2LABO_INFO>"
+   WPFlags = 2L
+)
+
+

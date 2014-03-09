@@ -1,0 +1,76 @@
+/* INI Change control file to update the MMPMMMIO.INI file */
+
+mmioInstall =
+   (
+   mmioFourCC        = "MP2S"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MP2S"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "MP2"
+   )
+
+mmioInstall =
+   (
+   mmioFourCC        = "MP2C"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MP2C"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "MP2"
+   )
+
+mmioInstall =
+   (
+   mmioFourCC        = "MP2T"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MP2T"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "MP2"
+   )
+
+mmioInstall =
+   (
+   mmioFourCC        = "MP2U"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MP2U"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "MP2"
+   )
+
+mmioInstall =
+   (
+   mmioFourCC        = "MP2V"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MP2V"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "MP2"
+   )
+
+mmioInstall =
+   (
+   mmioFourCC        = "MP2W"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MP2W"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "MP2"
+   )
+/* mmioMediaType Example: IMAGE=1 , AUDIO=2 , MIDI=4 , MOVIE=0x100 , ANIME=0x80 */
+
+

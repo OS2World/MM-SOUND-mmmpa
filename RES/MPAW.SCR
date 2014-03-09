@@ -1,0 +1,40 @@
+/* INI Change control file to update the MMPMMMIO.INI file */
+
+mmioInstall =
+   (
+   mmioFourCC        = "MPWR"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MPWR"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "MPA"
+   )
+
+mmioInstall =
+   (
+   mmioFourCC        = "MPW2"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MPW2"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "WAV"
+   )
+
+mmioInstall =
+   (
+   mmioFourCC        = "MPW1"
+   mmioDllName       = "$(DEST)MPAPROC.DLL"
+   mmioDllEntryPoint = "MMIOENTRY_MPW1"
+   mmioFlags         = 0L                    /* Always 0 for now */
+   mmioExtendLen     = 16L                   /* Always 16 for now */
+   mmioMediaType     = 2L                    /* defined in mmio.h */
+   mmioIOProcType    = 2L                    /* 2 = File Format */
+   mmioDefExt        = "WAV"
+   )
+/* mmioMediaType Example: IMAGE=1 , AUDIO=2 , MIDI=4 , MOVIE=0x100 , ANIME=0x80 */
+
+

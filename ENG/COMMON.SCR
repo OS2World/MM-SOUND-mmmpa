@@ -1,0 +1,14 @@
+/* ******************************************************************** */
+/* MULTIMEDIA INSTALL SCRIPT (SUB SCRIPT)                               */ 
+/* ******************************************************************** */
+
+WPObject = (
+   WPClassName = "WPFolder"
+   WPTitle = "TEAM MMOS/2 TOKYO Documentation"
+   WPSetupString = "OBJECTID=<FLDR_TM2LABO_INFO>;ALWAYSSORT=YES;DEFAULTVIEW=ICON;OPEN=ICON"
+   WPLocation = "<WP_INFO>"
+   WPFlags = 2L
+)
+
+
+

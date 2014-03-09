@@ -1,0 +1,10 @@
+ ProfileData =
+    (
+    ini="$(DIR)0\\MMPM.INI"   /* INI ファイルの名前     */
+    appname="STPM_SettingsPage:7"      /* 外部設定ページ  */    
+    keyname="MPAPAGE"      /* ページの名前 */
+    dll="MPAPAGE.DLL" /* リソース DLL 名       */
+    id=33L  /* リソース ID  */
+    )
+
+
